@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align using clearfix</title>
+    <style>
+        div{
+            border: 3px solid red;
+            padding: 5px;
+        }
+        img{
+            float: right;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table ;
+        }
+    </style>
+</head>
+<body>
+    <h2>Without clearfix</h2>
+    <div>
+        <img src="kakashi.jpg" alt="Kakashi">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro quod quidem obcaecati distinctio sed quibusdam culpa, necessitatibus quae ipsum repellendus, aliquam natus voluptatem minus. Odit similique praesentium ipsum earum quibusdam quisquam illo corporis placeat veritatis, debitis, quia modi qui maiores vitae consectetur animi pariatur. Aspernatur placeat tenetur obcaecati pariatur delectus?</p>
+    </div>
+
+
+    <h2 style="clear:right">Using clearfix</h2>
+    <div class="clearfix">
+        <img src="kakashi.jpg" alt="kakashi">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur fuga iste mollitia, assumenda dicta quasi quidem quas magnam amet voluptas praesentium consequuntur eos nisi sapiente? Voluptates vero minus nesciunt eius incidunt obcaecati perferendis id, provident aperiam, aliquam consectetur sit enim ex possimus? Soluta explicabo provident, laboriosam rem cum ipsam expedita.</p>
+    </div>
+
+</body>
+</html>

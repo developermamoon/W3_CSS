@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruff Display Grid</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        background-color: #00aa55;
+        grid-template-areas: 
+        "header header header"
+        "sidebar1 sidebar2 sidebar3"
+        "sidebar1 footer footer";
+    }
+    .header{
+        background-color: Green;
+        color: white;
+        padding: 10px;
+        height: 50px;
+        text-align: center;
+        grid-area: header;
+        }
+    .sidebar1{
+        background-color: maroon;
+        color: white;
+        padding: 10px;
+        height: 120px;
+        text-align: center;
+        grid-area: sidebar1;
+    }
+    .sidebar2{
+        background-color: aqua;
+        color: white;
+        padding: 10px;
+        height: 50px;
+        text-align: center;
+        grid-area: sidebar2;
+    }
+    .sidebar3{
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        height: 50px;
+        text-align: center;
+        grid-area: sidebar3;
+    }
+    .footer{
+        background-color: violet;
+        color: white;
+        padding: 10px;
+        height: 50px;
+        text-align: center;
+        grid-area: footer;
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar1">Sidebar 1</div>
+        <div class="sidebar2">Sidebar 2</div>
+        <div class="sidebar3">Sidebar 3</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

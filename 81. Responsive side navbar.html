@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Side Navbar</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            width: 25%;
+            overflow: hidden;
+        }
+        ul li a{
+            text-decoration: none;
+            display: block;
+            padding: 8px 16px;
+            color: #000;
+        }
+        li a.active{
+            background-color: #4CAF50;
+            color: white;
+        }
+        li a:hover:not(.active)
+        {
+            background-color: #555;
+            color: white;
+        }
+        div.content {
+            margin-left: 25%;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+        @media screen and (max-width:900px) {
+            ul{
+                width: 100%;
+                position: relative;
+                height: auto;
+            }
+            ul li{
+                float: left;
+                padding: 15px;
+            }
+        }
+        @media screen and (max-width:500px) {
+            ul li{
+                text-align: center;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="">Home</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">About</a></li>
+    </ul>
+    <div class="content">
+        <h2>Responsive Sidenav Example</h2>
+        <p>This example use media queries to transform the sidenav to a top navigation bar when the screen size is 900px or less.</p>
+        <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
+        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+        <h3>Resize the browser window to see the effect.</h3>
+      </div>
+</body>
+</html>

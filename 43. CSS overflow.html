@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS overflow</title>
+    <style>
+        div{
+            float: left;
+        }
+        .div1{
+            width: 200px;
+            height: 50px;
+            background-color: #eee;
+            overflow: visible;
+            margin-right: 20px;
+        }
+        .div2{
+            width: 200px;
+            height: 50px;
+            background-color: #eee;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+        .div3{
+            width: 200px;
+            height: 50px;
+            background-color: #eee;
+            overflow: scroll;
+            margin-right: 20px;
+        }
+        .div4{
+            width: 200px;
+            height: 50px;
+            background-color: #eee;
+            overflow: auto;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overflow visible => hidden => scroll => auto</h1>
+    <div>
+        <div class="div1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quos fuga reprehenderit tenetur hic doloribus nam aut dolor praesentium, accusantium id blanditiis iure expedita explicabo delectus soluta similique quibusdam. Eius.
+        </div>
+        <div class="div2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quos fuga reprehenderit tenetur hic doloribus nam aut dolor praesentium, accusantium id blanditiis iure expedita explicabo delectus soluta similique quibusdam. Eius.
+        </div>
+        <div class="div3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quos fuga reprehenderit tenetur hic doloribus nam aut dolor praesentium, accusantium id blanditiis iure expedita explicabo delectus soluta similique quibusdam. Eius.
+        </div>
+        <div class="div4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quos fuga reprehenderit tenetur hic doloribus nam aut dolor praesentium, accusantium id blanditiis iure expedita explicabo delectus soluta similique quibusdam. Eius.
+        </div>
+    </div>
+</body>
+</html>

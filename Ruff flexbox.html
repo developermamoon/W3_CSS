@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flexbox RUFF</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+.container {
+    display: flex;
+    background-color: DodgerBlue;
+}    
+.container div {
+    display: flex;
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #f1f1f1;
+    justify-content: center;
+    align-items: center;
+}    
+.one{
+    flex: 2;
+}
+.two{
+    flex: 1;
+}
+.three{
+    /* flex: 1; */
+}
+</style>
+<body>
+    <div>
+        <div class="container"> 
+            <div class="one"><b>Hello World !!!</b></div>
+            <div class="two"><b>Hello World !!!</b></div>
+            <div class="three"><b>Hello World !!!</b></div>
+    </div>
+</body>
+</html>

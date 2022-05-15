@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <style>
+        .div1 h3{
+            background-color: yellow;
+        }
+        .div2>h3{
+            background-color:  red;
+            color: white;
+        }
+        .div3+h3{
+            background-color: green;
+            color: white;
+        }
+        .div4~h3{
+            background-color: yellow;
+            color: black;
+        }
+        h2{
+            background-color: green;
+            color: white;
+            text-align: center;
+            width: 15%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Descendant</h2>
+    <div class="div1"><h3>Hello World</h3></div>
+    <h2>Child</h2>
+    <div class="div2">
+        <h3>Hello World</h3>
+        <h3>Hello World</h3>
+        <section><h3>Inside paragraph</h3></section>
+        <h3>Hello World</h3>
+    </div>
+    <h2>Adjacent Sibling</h2>
+    <div class="div3">
+        <h3>Hello World</h3>
+        <h3>Hello World</h3>
+    </div>
+        <h3>Hello World</h3>
+        <h3>Hello World</h3>
+
+    <h2>General Sibling</h2>
+    <div class="div4">
+        <h3>Hello World</h3>
+    </div>
+    <h3>Hello World</h3>
+    <h3>Hello World</h3>
+    <h3>Hello World</h3>
+    <h3>Hello World</h3>
+</body>
+</html>
